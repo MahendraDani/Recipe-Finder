@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&family=Poppins&display=swap');
+
+/* Reset */
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--primary-color);
+  font-family: var(--text-font);
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--heading-font);
+}
+
+
+/* Defining Variable */
+:root{
+  --heading-font : 'Poppins', sans-serif;
+  --text-font : 'Open Sans', sans-serif;
+  --cursive-font: 'Dancing Script', cursive;
+  --navbar-height : 13rem;
+  --background-height : 200vh;
+  --mid-width : 68.5rem;
+  --heading-color :#26de81;
+  --primary-color : #fff; 
+}
+
+
+/* Utility Classes */
+.overlay{
+  width: 100%;
+  /* height:var(--background-height); */
+  height: fit-content;
+  background: rgba(0,0,0,0.5);
+}
+.mid{
+  /* border: 2px solid white; */
+  width: var(--mid-width);
+  padding: 2rem 0;
+}
+.flex-centre{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Navigation Menu */
+.navbar{
+  width: 100%;
+  height: var(--navbar-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fc5c65;
+
+}
+.title{
+  font-size: 5rem;
+  font-family: var(--cursive-font);
+  color: var(--heading-color);
+}
+.sub-title{
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  padding: .7rem 0;
+}
+.container-main{
+  width: 100%;
+  height: fit-content;
+  background: url(background-food.jpg) ;
+  background-size: cover;
+}
+.contact{
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 20px;
+}
+
+.search-section{
+  width: 40rem;
+  height: var(--navbar-height);
+  /* border: 2px solid yellow; */
+  background-color: #a55eea;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.search-title{
+  font-size: 1.5rem;
+  font-family: var(--heading-font);
+  margin-bottom: 1rem;
+
+}
+#recipe-input{
+  font-size: 16px;
+  font-family: var(--text-font);
+  width : 20rem;
+  padding: 3px 10px;
+  color: black;
+  border: none;
+  border-radius: 10px;
+}
+#btn{
+  padding: 3px 8px;
+  width: 4.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #fa8231;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#btn:hover{
+  background-color: #fd9644;
+}
+.card-section{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 50px;
+}
+.card{
+  padding: 5px 10px;
+  width: 290px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: beige;
+  border-radius: 15px;
+}
+.img{
+  height: 280px;
+  width: 280px;
+  border: none;
+  border-radius: 10px;
+}
+.dish-name{
+  font-size: 25px;
+  color: black;
+}
+.calories{
+  color: white;
+  background-color: #fc5c65;
+  padding: 3px 7px;
+  border-radius: 2px;
+}
+.overview{
+  text-align: center;
+  color: black;
+}
+.link{
+  margin-top: 10px;
+  padding: 3px 8px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  background-color: #fa8231;
+  transition: 0.2s ease-out;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.link:hover{
+  cursor: pointer;
+  background-color: #fd9644;
+}

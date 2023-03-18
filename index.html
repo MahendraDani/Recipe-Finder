@@ -1,0 +1,61 @@
+<!-- Spring Bootcamp - AI CLub -->
+<!-- Day 02 : 17.03.2023 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project : Day 02 - Spring Bootcamp (AI Club)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Section 01 : Navigation Menu -->
+  <div class="navbar">
+    <h2 class="title">Recipe GUIDE</h2>
+    <!-- <div class="sub-title">Your Personal Recipe Finder</div> -->
+    <div class="contact">
+      <p class="info">Made by Mahendra Dani</p>
+      <div class="links">
+        <a href="https://linkedin.com/in/mahendra-dani" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/MahendraDani" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Section 02 : Main section -->
+  <div class="container-main ">
+    <!-- Overlay -->
+    <div class="overlay flex-centre">
+      <!-- Aligning content in middle of the webpage -->
+      <div class="mid flex-centre ">
+
+        <!-- Search Section -->
+        <section class="search-section ">
+          <div class="search-title">Search any Recipe here</div>
+          <div class="search">
+            <input type="text" id="recipe-input" placeholder='Try searching for "Pav Bhaji"'>
+            <button id="btn">Search</button>
+          </div>
+        </section>
+      </div>
+
+       <!-- Section 03 :Cards Section -->
+         <div class="mid card-section ">
+            <div class="card">
+                <img src="https://picsum.photos/200/300" alt="Image" class="img">
+                <h3 class="dish-name">Dish Name</h3>
+                <span class="calories">Carloies</span>
+                <p class="overview">Take your boring salads up a knotch. This recipe is perfect for
+                  lunch and only contains 5 ingredients!!</p>
+                <a href="#" class="link" target="_blank">View Recipe</a>
+            </div>
+          </div>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/78702e3d69.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>
